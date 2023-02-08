@@ -1,11 +1,14 @@
-import express from 'express';
+const express = require('express');
+const path = require('path');
 
 const app = express();
 const port = 8080;
 
+const basePath = path.join(__dirname, 'templates');
+
 app.get('/', (request, response) => {
 
-    response.send('Welcome to Express Server');
+    response.sendFile(basePath + '/index.html');
 
 });
 

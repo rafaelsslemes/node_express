@@ -2,10 +2,10 @@
   "name": "com.study",
   "version": "1.0.0",
   "description": "A Project to study Node and Express",
-  "main": "index.mjs",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.mjs"
+    "start": "node index.js"
   },
   "author": "Rafael Lemes",
   "license": "ISC",
