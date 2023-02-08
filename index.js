@@ -15,6 +15,9 @@ app.use(authentication);
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
+// Get Static Files (CSS and assets)
+app.use(express.static('public'));
+
 // User route configuration
 app.use('/user', userRoute);
 
