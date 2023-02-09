@@ -26,7 +26,10 @@ app.get('/', (request, response) => {
     response.sendFile(basePath + '/index.html');
 });
 
-
+// 404 configuration
+app.use(function (request, response, next) {
+    response.status(404).sendFile(basePath + '/404.html');
+});
 
 // Start server listening
 app.listen(port, ()=>{
